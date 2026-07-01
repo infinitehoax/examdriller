@@ -52,20 +52,31 @@ npm run preview   # serve the production build locally
 
 ## Deploying to Render (free tier)
 
-This ships as a **Static Site** — no server process, no cold starts, no
-sleep on Render's free tier.
+This application is designed to be deployed as a **Static Site** on Render's free tier. This means no server process, no cold starts, and no sleeping.
 
-**Option A — one click via `render.yaml`:**
-1. Push this repo to GitHub.
-2. In Render: New → Blueprint → point at the repo. `render.yaml` in the
-   root configures everything (build command, publish path, SPA rewrite).
+### Option A — One-Click Blueprint (Recommended)
+This uses the `render.yaml` file in the repository to automatically configure the service.
 
-**Option B — manual:**
-1. New → Static Site → connect the repo.
-2. Build command: `npm install && npm run build`
-3. Publish directory: `dist`
-4. Add a rewrite rule `/* → /index.html` (required for React Router routes
-   like `/practice` to work on refresh/direct link).
+1. Push this repository to your GitHub account.
+2. Log in to your [Render Dashboard](https://dashboard.render.com/).
+3. Click **New** → **Blueprint**.
+4. Connect your GitHub repository.
+5. Render will detect the `render.yaml` file and configure the build command, publish directory, and SPA rewrite rules automatically.
+
+### Option B — Manual Deployment
+If you prefer to configure the service manually:
+
+1. Click **New** → **Static Site** and connect your repository.
+2. **Build Settings:**
+   - **Build Command:** `npm install && npm run build`
+   - **Publish Directory:** `dist`
+3. **SPA Routing (Crucial):**
+   To ensure React Router works correctly (e.g., when refreshing `/practice`), you must add a rewrite rule:
+   - Go to the **Redirects/Rewrites** tab for your service.
+   - Click **Add Rule**.
+   - **Source:** `/*`
+   - **Destination:** `/index.html`
+   - **Action:** `Rewrite`
 
 ## What's stubbed vs. real (honesty list)
 
