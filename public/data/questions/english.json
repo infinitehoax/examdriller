@@ -1,0 +1,75 @@
+{
+  "subject": "English Language",
+  "subjectCode": "ENG",
+  "years": [2023],
+  "topics": [
+    "Comprehension",
+    "Lexis and Structure",
+    "Oral English",
+    "Summary"
+  ],
+  "questions": [
+    {
+      "id": "ENG-2023-001",
+      "year": 2023,
+      "topic": "Lexis and Structure",
+      "mode": "objective",
+      "text": "Choose the word that best completes the sentence: The committee's decision was ________ by all members present.",
+      "options": [
+        { "key": "A", "text": "ratified" },
+        { "key": "B", "text": "ratify" },
+        { "key": "C", "text": "ratifying" },
+        { "key": "D", "text": "ratifies" }
+      ],
+      "correctOption": "A",
+      "explanation": "The passive construction 'was ratified' requires the past participle form of the verb.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ENG-2023-002",
+      "year": 2023,
+      "topic": "Lexis and Structure",
+      "mode": "objective",
+      "text": "Select the option nearest in meaning to the underlined word: The minister's speech was full of platitudes.",
+      "options": [
+        { "key": "A", "text": "original ideas" },
+        { "key": "B", "text": "overused remarks" },
+        { "key": "C", "text": "false promises" },
+        { "key": "D", "text": "harsh criticisms" }
+      ],
+      "correctOption": "B",
+      "explanation": "A platitude is a trite, overused remark or statement, especially one expressed as though it were original or significant.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ENG-2023-003",
+      "year": 2023,
+      "topic": "Oral English",
+      "mode": "objective",
+      "text": "Which of the following words has the same vowel sound as 'bird'?",
+      "options": [
+        { "key": "A", "text": "bed" },
+        { "key": "B", "text": "bad" },
+        { "key": "C", "text": "heard" },
+        { "key": "D", "text": "bod" }
+      ],
+      "correctOption": "C",
+      "explanation": "'Bird' and 'heard' both contain the vowel sound /ɜː/.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "ENG-2023-004",
+      "year": 2023,
+      "topic": "Comprehension",
+      "mode": "theory",
+      "text": "Read the passage [provided separately] and answer the questions that follow.",
+      "subparts": [
+        { "id": "a", "text": "What is the main idea of the passage?", "marks": 4 },
+        { "id": "b", "text": "Explain the meaning of the phrase 'a stitch in time' as used in the passage.", "marks": 3 },
+        { "id": "c", "text": "In not more than 80 words, summarise the writer's argument.", "marks": 8 }
+      ],
+      "markScheme": "Answers should be based on the specific passage provided to candidates; mark scheme awards points for relevance, conciseness, and use of own words in the summary.",
+      "difficulty": "hard"
+    }
+  ]
+}

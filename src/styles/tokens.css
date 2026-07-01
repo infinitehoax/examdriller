@@ -1,0 +1,95 @@
+/* src/styles/tokens.css
+   ---------------------------------------------------------------
+   TestDriller visual identity: a WASSCE exam-prep tool should feel
+   like the materiality of the exam itself — exercise books, mark
+   schemes, answer sheets, grade bands — not generic SaaS edtech.
+   --------------------------------------------------------------- */
+
+:root {
+  /* Color */
+  --ink: #1a1a1a;
+  --paper: #f2ede0;          /* exercise-book cream */
+  --paper-raised: #ffffff;
+  --green: #0b3d2e;          /* WAEC chalkboard green — primary */
+  --green-soft: #143f30;
+  --green-tint: #e3ebe5;
+  --red: #d6483b;            /* mark-scheme red — errors/corrections */
+  --red-tint: #f7e3e0;
+  --gold: #e8b43a;           /* brass — achievement, scores, highlights */
+  --gold-tint: #fbeec8;
+  --line: #d8d0bd;           /* hairline rules on paper */
+  --line-dark: rgba(11, 61, 46, 0.18);
+  --muted: #6b6353;
+
+  /* Grade band colors (A1 best -> F9 worst), used across results/analytics */
+  --grade-a: #0b3d2e;
+  --grade-b: #3f7a52;
+  --grade-c: #8c9a3a;
+  --grade-d: #e8b43a;
+  --grade-e: #d97a3a;
+  --grade-f: #d6483b;
+
+  /* Type */
+  --font-display: 'Source Serif 4', 'Lora', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+  /* Layout */
+  --sidebar-w: 248px;
+  --topbar-h: 56px;
+  --radius: 3px; /* sharp, paper-like — not bubbly SaaS rounding */
+  --shadow-card: 0 1px 0 rgba(11, 61, 46, 0.06), 0 2px 8px rgba(26, 26, 26, 0.06);
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+body {
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 27px,
+      var(--line) 27px,
+      var(--line) 28px
+    );
+  background-attachment: local;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  margin: 0;
+  color: var(--green);
+  letter-spacing: -0.01em;
+}
+
+a { color: var(--green); }
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+::selection { background: var(--gold-tint); }
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.mono { font-family: var(--font-mono); }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

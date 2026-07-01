@@ -1,0 +1,46 @@
+/* src/pages/games/MathRush.css */
+
+.rush-belt {
+  position: relative;
+  height: 64px;
+  background: repeating-linear-gradient(45deg, var(--paper) 0 10px, var(--line) 10px 12px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.rush-block {
+  position: absolute;
+  top: 8px;
+  transform: translateX(-50%);
+  background: var(--green);
+  color: var(--gold-tint);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  transition: left 0.1s linear;
+  white-space: nowrap;
+}
+
+.rush-end {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--red);
+}
+
+.rush-input {
+  flex: 1;
+  font-size: 18px;
+  font-family: var(--font-mono);
+  padding: 10px 14px;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.rush-input.rush-hit { border-color: var(--green); background: var(--green-tint); }
+.rush-input.rush-miss { border-color: var(--red); background: var(--red-tint); }

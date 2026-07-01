@@ -1,0 +1,7 @@
+{
+  "subjects": [
+    { "code": "BIO", "name": "Biology", "file": "biology.json" },
+    { "code": "MTH", "name": "Mathematics", "file": "mathematics.json" },
+    { "code": "ENG", "name": "English Language", "file": "english.json" }
+  ]
+}

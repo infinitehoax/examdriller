@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: testdriller
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    pullRequestPreviewsEnabled: false
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      - path: /data/questions/*
+        name: Cache-Control
+        value: public, max-age=3600

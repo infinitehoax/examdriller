@@ -1,0 +1,92 @@
+{
+  "subject": "Biology",
+  "subjectCode": "BIO",
+  "years": [2023],
+  "topics": [
+    "Cell Biology",
+    "Genetics",
+    "Ecology",
+    "Human Physiology",
+    "Reproduction"
+  ],
+  "questions": [
+    {
+      "id": "BIO-2023-001",
+      "year": 2023,
+      "topic": "Cell Biology",
+      "mode": "objective",
+      "text": "Which of the following organelles is responsible for the synthesis of ATP in a eukaryotic cell?",
+      "options": [
+        { "key": "A", "text": "Golgi apparatus" },
+        { "key": "B", "text": "Mitochondrion" },
+        { "key": "C", "text": "Ribosome" },
+        { "key": "D", "text": "Lysosome" }
+      ],
+      "correctOption": "B",
+      "explanation": "The mitochondrion is the site of aerobic respiration, where ATP is produced through the electron transport chain and oxidative phosphorylation. The Golgi apparatus packages proteins, ribosomes synthesise proteins, and lysosomes digest cellular waste.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "BIO-2023-002",
+      "year": 2023,
+      "topic": "Genetics",
+      "mode": "objective",
+      "text": "In a monohybrid cross between two heterozygous parents (Tt x Tt), what proportion of the offspring is expected to be homozygous recessive?",
+      "options": [
+        { "key": "A", "text": "1/4" },
+        { "key": "B", "text": "1/2" },
+        { "key": "C", "text": "3/4" },
+        { "key": "D", "text": "0" }
+      ],
+      "correctOption": "A",
+      "explanation": "A Tt x Tt cross produces offspring in the ratio 1 TT : 2 Tt : 1 tt. Only the tt genotype is homozygous recessive, giving a probability of 1/4.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "BIO-2023-003",
+      "year": 2023,
+      "topic": "Ecology",
+      "mode": "objective",
+      "text": "The continuous loss of water vapour from the aerial parts of a plant is known as",
+      "options": [
+        { "key": "A", "text": "Guttation" },
+        { "key": "B", "text": "Transpiration" },
+        { "key": "C", "text": "Translocation" },
+        { "key": "D", "text": "Respiration" }
+      ],
+      "correctOption": "B",
+      "explanation": "Transpiration is the loss of water vapour mainly through the stomata of leaves. Guttation is the loss of liquid water droplets, translocation is the movement of food substances, and respiration releases energy.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "BIO-2023-004",
+      "year": 2023,
+      "topic": "Human Physiology",
+      "mode": "objective",
+      "text": "Which blood vessel carries deoxygenated blood away from the heart?",
+      "options": [
+        { "key": "A", "text": "Pulmonary artery" },
+        { "key": "B", "text": "Pulmonary vein" },
+        { "key": "C", "text": "Aorta" },
+        { "key": "D", "text": "Vena cava" }
+      ],
+      "correctOption": "A",
+      "explanation": "The pulmonary artery carries deoxygenated blood from the right ventricle of the heart to the lungs. The pulmonary vein returns oxygenated blood to the heart, the aorta carries oxygenated blood from the heart, and the vena cava returns deoxygenated blood to the heart.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "BIO-2023-005",
+      "year": 2023,
+      "topic": "Reproduction",
+      "mode": "theory",
+      "text": "Describe the process of fertilisation in flowering plants, from pollination to the formation of a zygote.",
+      "subparts": [
+        { "id": "a", "text": "Define pollination.", "marks": 2 },
+        { "id": "b", "text": "Describe the events that occur from pollen germination to fertilisation.", "marks": 6 },
+        { "id": "c", "text": "State two differences between self-pollination and cross-pollination.", "marks": 4 }
+      ],
+      "markScheme": "a) Pollination is the transfer of pollen grains from the anther to the stigma of a flower. b) The pollen grain germinates on the stigma, forming a pollen tube that grows down through the style towards the ovule, guided by chemicals; the pollen tube enters the ovule through the micropyle; the male nucleus fuses with the egg cell nucleus to form a zygote. c) Self-pollination occurs within the same flower or plant while cross-pollination occurs between flowers of different plants; self-pollination reduces genetic variation while cross-pollination increases it.",
+      "difficulty": "hard"
+    }
+  ]
+}
