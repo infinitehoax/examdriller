@@ -2,8 +2,8 @@
 *Currently, everything lives in `localStorage`. We need a database to allow cross-device syncing and user accounts. Using a Backend-as-a-Service (BaaS) like Supabase or Firebase is highly recommended for speed.*
 
 **Days 1–5: Infrastructure & Auth Setup**
-[ ] - Day 1: Choose and set up your backend (e.g., Supabase, Firebase, or a custom Node/Express + PostgreSQL stack).
-[ ] - Day 2: Implement User Registration (Email/Password) in the frontend.
+- [ ] - Day 1: Choose and set up your backend (e.g., Supabase, Firebase, or a custom Node/Express + PostgreSQL stack).
+- [ ] - Day 2: Implement User Registration (Email/Password) in the frontend.
 [ ] - Day 3: Implement User Login and Logout logic.
 [ ] - Day 4: Implement Password Reset / Forgot Password flow.
 [ ] - Day 5: Secure frontend routes (create a `<ProtectedRoute>` wrapper so unauthenticated users are redirected to login).
